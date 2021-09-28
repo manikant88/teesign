@@ -1,0 +1,61 @@
+body {
+  /* background: aquamarine; */
+  margin: 0px;
+}
+
+.pattern-container {
+  margin: 50px;
+}
+
+.pattern-overlay {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.canvas-overlay {
+  width: inherit;
+  height: inherit;
+  background-color: black;
+  position: absolute;
+}
+
+.shape-overlay {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+
+.test-overlay {
+  position: relative;
+  background-color: black;
+  margin-bottom: 25px;
+  width: 200px;
+  height: 200px;
+}
+
+.pattern-produce {
+  background-color: black;
+}
+
+.controls {
+  margin-bottom: 25px;
+}
+
+.buttonPatterns {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  margin-bottom: 25px;
+}
+
+.patternButtonSq {
+  display: flex;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.patternButtonSq.active {
+  background-color: #f5f5f5;
+}

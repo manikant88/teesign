@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Teesign</title>
+</head>
+
+<body>
+    <div class="pattern-container">
+        <input type="file" id="imageLoader" name="imageLoader" />
+
+        <div class="controls">
+            <p>Pattern</p>
+            <div class="buttonPatterns">
+                <div class="patternButtonSq active"><img src="/assets/square.svg"></div>
+                <div class="patternButtonSq" ><img onclick="drawHexOveraly()" src="/assets/hexagon.svg"></div>
+                <div class="patternButtonSq"><img src="/assets/diamond.svg"></div>
+                <div class="patternButtonSq"><img src="/assets/eigth-heaxagon.svg"></div>
+            </div>
+            <input id="myRange" type="range" value="0" min="0" max="360" />
+            <span id="degreeValue"></span>
+
+        </div>
+        <canvas id="testCanvas" class="test-overlay"></canvas>
+
+        <div class="pattern-overlay">
+            <canvas id="imageCanvas" class="canvas-overlay">Your browser does not support HTML5 Canvas.</canvas>
+            <canvas id="shapeCanvas" class="shape-overlay">Your browser does not support HTML5 Canvas.</canvas>
+        </div>
+
+
+        <div class="pattern-view">
+            <canvas id="patternCanvas" class="pattern-produce">Your browser does not support HTML5 Canvas.</canvas>
+        </div>
+    </div>
+
+    <script src="canvas.js"></script>
+</body>
+
+</html>
